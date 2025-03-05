@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         <?php endif; ?>
             <br>
-        <a href="index.html">Go Back to Generate Another String</a>
+        <a href="index.html">Go Back</a>
     </div>
 </body>
 </html>
