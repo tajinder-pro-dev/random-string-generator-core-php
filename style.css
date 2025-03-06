@@ -1,0 +1,138 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #6e7cfc, #d6a7f9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .container:hover {
+    transform: translateY(-10px);
+} */
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #6e7cfc;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(110, 124, 252, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #6e7cfc;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #5469e1;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Result section */
+.result {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+    font-size: 22px;
+    color: #6e7cfc;
+    font-weight: 600;
+}
+
+.result p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.result .generated-string {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .result h2 {
+        font-size: 20px;
+    }
+}
